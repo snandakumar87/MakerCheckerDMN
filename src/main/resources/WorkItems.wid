@@ -1,0 +1,38 @@
+[
+     [
+    "name" : "BuildChanges", 
+    "parameters" : [ 
+        "artifactName" : new StringDataType()
+    ],
+    "results" : [ 
+        "containerName" : new StringDataType()
+    ],
+    "displayName" : "BuildChanges", 
+    "icon" : "" 
+  ],
+  [
+    "name" : "PromoteRelease", 
+    "parameters" : [ 
+        "artifactName" : new StringDataType(),
+        "containerForReview" : new StringDataType()
+        
+    ], 
+    "displayName" : "PromoteRelease", 
+    "icon" : "" 
+  ],
+  
+     [
+    "name" : "SimulationUtility", 
+    "parameters" : [ 
+        "artifactName" : new StringDataType(),
+        "containerName" : new StringDataType()
+    ],
+    "results" : [ 
+        "baselineResponse" : new ObjectDataType(),
+        "newResponse": new ObjectDataType(),
+        "scenarioSet":new ObjectDataType() 
+    ],
+    "displayName" : "SimulationUtility", 
+    "icon" : "" 
+  ]
+]
